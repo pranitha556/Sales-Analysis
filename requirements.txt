@@ -1,0 +1,15 @@
+streamlit
+pandas
+requests
+fastapi
+uvicorn
+python-multipart
+passlib==1.7.4
+python-jose
+scikit-learn
+matplotlib
+seaborn
+plotly
+numpy
+bcrypt==4.0.1
+openpyxl
