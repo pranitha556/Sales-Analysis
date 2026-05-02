@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
+import os
+st.write(os.listdir())
+st.write(os.listdir("datasets"))
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(page_title="Sales Analytics System", layout="wide")
@@ -168,6 +171,6 @@ with open("datasets/Sales Data.csv", "rb") as file:
     st.download_button(
         label="Download Sales Data CSV",
         data=file.read(),   # FIX HERE
-        file_name="Sales Data.csv",
+        file_name="Sales_Data.csv",
         mime="text/csv"
     )
